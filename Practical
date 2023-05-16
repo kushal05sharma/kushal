@@ -1,0 +1,424 @@
+1) Tags 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      line-height: 1.5;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Web Page</h1>
+  
+  <h2>About Me</h2>
+  <p>
+    Hi there! My name is John Doe and I'm a web developer. I love creating awesome websites using HTML, CSS, and JavaScript.
+  </p>
+  
+  <h2>My Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+  
+  <h2>My Projects</h2>
+  <ol>
+    <li><a href="project1.html">Project 1</a></li>
+    <li><a href="project2.html">Project 2</a></li>
+    <li><a href="project3.html">Project 3</a></li>
+  </ol>
+  
+  <h2>My Photo</h2>
+  <img src="myphoto.jpg" alt="My Photo">
+  
+  <h2>Contact Me</h2>
+  <p>
+    Feel free to reach out to me via email at <a href="mailto:john@example.com">john@example.com</a>.
+  </p>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Unorderd And Ordered 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>List Example</h1>
+  
+  <h2>Unordered List</h2>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  
+  <h2>Ordered List</h2>
+  <ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Fourth item</li>
+  </ol>
+  
+  <h2>Nested List</h2>
+  <ul>
+    <li>Fruits</li>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+    <li>Vegetables</li>
+    <ul>
+      <li>Carrot</li>
+      <li>Tomato</li>
+      <li>Broccoli</li>
+    </ul>
+  </ul>
+</body>
+</html>
+----------------------------------------------------------------------------------
+
+3) Table 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Table Example</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Mark Johnson</td>
+        <td>40</td>
+        <td>Australia</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>
+---------------------------------------------
+4) Form 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Example</h1>
+  
+  <form action="submit-form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+</body>
+</html>
+-----------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Alerts</title>
+  <script>
+    function showAlert() {
+      alert("Hello! This is an alert message.");
+    }
+
+    function showPrompt() {
+      var name = prompt("What is your name?");
+      if (name != null && name != "") {
+        alert("Hello, " + name + "!");
+      }
+    }
+
+    function showConfirm() {
+      var result = confirm("Are you sure you want to delete this item?");
+      if (result == true) {
+        alert("Item deleted successfully.");
+      } else {
+        alert("Item not deleted.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Alerts</h1>
+  <p>
+    <button onclick="showAlert()">Show Alert</button>
+  </p>
+  <p>
+    <button onclick="showPrompt()">Show Prompt</button>
+  </p>
+  <p>
+    <button onclick="showConfirm()">Show Confirm</button>
+  </p>
+</body>
+</html>
+-------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .calculator {
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .calculator input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+    .calculator button {
+      width: 48%;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+  </style>
+  <script>
+    function calculate() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var result = 0;
+
+      var operation = document.getElementById("operation").value;
+      switch (operation) {
+        case "addition":
+          result = num1 + num2;
+          break;
+        case "subtraction":
+          result = num1 - num2;
+          break;
+        case "multiplication":
+          result = num1 * num2;
+          break;
+        case "division":
+          result = num1 / num2;
+          break;
+        case "square":
+          result = num1 * num1;
+          break;
+      }
+
+      document.getElementById("result").value = result;
+    }
+  </script>
+</head>
+<body>
+  <div class="calculator">
+    <h1>JavaScript Calculator</h1>
+    <input type="text" id="num1" placeholder="Enter number 1" />
+    <input type="text" id="num2" placeholder="Enter number 2" />
+    <select id="operation">
+      <option value="addition">Addition</option>
+      <option value="subtraction">Subtraction</option>
+      <option value="multiplication">Multiplication</option>
+      <option value="division">Division</option>
+      <option value="square">Square</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <input type="text" id="result" placeholder="Result" readonly />
+  </div>
+</body>
+</html>
+----------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .form-group input[type="text"], .form-group input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username == "" || password == "") {
+        alert("Please enter both username and password.");
+        return false;
+      }
+
+      // Perform further validation if needed
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Login Form</h1>
+    <form action="login.php" method="post" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
